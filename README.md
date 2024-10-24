@@ -23,12 +23,10 @@ curl -X POST http://localhost:8080/accept_friend_request -H "Content-Type: appli
 curl -X POST http://localhost:8080/decline_friend_request -H "Content-Type: application/json" -d '{"sender_username":"testuser", "receiver_username":"anotheruser"}'
 
 9. Get Pending Friend Requests
-
 curl -X GET "http://localhost:8080/pending_friend_requests?username=testuser"
 
 10. Get Friends of a User
 curl -X GET "http://localhost:8080/friends?username=testuser"
-
 
 11. Add a Friend
 curl -X POST http://localhost:8080/add_friend -H "Content-Type: application/json" -d '{"username":"testuser", "friend_username":"anotheruser"}'
